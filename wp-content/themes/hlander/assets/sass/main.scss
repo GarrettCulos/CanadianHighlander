@@ -1,15 +1,32 @@
-// add compass
-//@import "compass";
+// Variables
+@import "modules/variables";
+@import "compass/css3";
 
-// add scss variables
-@import "/modules/variables";
+// Import bootstrap
+@import "modules/bootstrap_overrides";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// add scss style for page 1
+// Rest of the modules
+@import "modules/mixins";
 
-// add scss style for page 2
+	//@import "modules/fonts";
+@import "partials/helpers";
 
-// add scss style for page 3
+// Impoprt from partials
+@import "partials/index";
 
-// add scss style for page 4
+@import "partials/header/navbar";
 
-// add scss style for page 5
+@import "partials/footer/footer";
+
+// Import Sprites
+		//@import "compass/utilities/sprites";
+
+
+		//@import "icons/*.png";
+		//@import "icons2x/*.png";
+
+		//$icons_sprite_url: sprite-url($icons_sprites);
+		//$icons2x_sprite_url: sprite-url($icons2x_sprites);
+
+		//@import "partials/icons/icons";

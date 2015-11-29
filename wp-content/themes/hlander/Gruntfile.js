@@ -3,41 +3,75 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    watch: {                                                  // Task 1
-      css: {
-        files: [ '**/*.scss', '**/*.scss' ],
-        tasks: ['compass']
-      },
-      js: {
-        files: [ 'assets/js/**/*.js', 'Gruntfile.js'],
-        tasks: ['jshint']
-      }
-    },
-    sass: {                                                  // Task 2
-      dist: {
-        options: {
-          sassDir: 'assets/scss/',
-          cssDir: 'assets/css/',
-          outputStyle: 'compressed'
+    
+    compass:{
+      dist: {                   // Target
+        options: {              // Target options
+          sassDir: './assets/sass',
+          cssDir: './build',
+          config: 'config.rb'
         }
       }
     },
-    jshint: {                                                 // Task 3
-      
+
+    bower_concat: {
+      all: {
+        dest: 'build/_lib.js',
+        cssDest: 'build/_lib.css',
+        dependencies: {
+        },
+        bowerOptions: {
+          relative: false
+        },
+        exclude: [
+          'bootstrap'
+        ],
+        mainFiles: {
+          
+        },
+      }
+    },
+
+    cssmin: {
       options: {
-        globals: {
-          jQuery: true
+        sourceMap: true,
+      },
+      app: {
+        src: 'build/*.css',
+        dest: 'assets/css/style.min.css'
+      }
+    },
+
+    uglify: {
+      options: {
+        mangle: false,
+        sourceMap: true,
+      },
+      app: {
+        files: {
+          'assets/js/main.min.js': ['build/_lib.js', 'assets/js/*.js', '!assets/js/*.min.js']
         }
+      },
+    },
+    
+    watch: {
+      css: {
+        files: 'assets/sass/**/*.scss',
+        tasks: ['theme']
+      },
+
+      scripts: {
+        files: ['assets/js/**/*.js', '!assets/js/**/*.min.js'],
+        tasks: ['uglify']
       }
     }
   });
 
   // Load the Grunt plugins.
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+   require('load-grunt-tasks')(grunt);
+
 
   // Register the default tasks.
-  grunt.registerTask('watch', ['watch']);
-  grunt.registerTask('default', ['jshint', 'sass']);
+  grunt.registerTask('default', ['compass', 'bower_concat', 'cssmin', 'uglify']);
+  grunt.registerTask('theme', ['compass', 'cssmin']);
 };

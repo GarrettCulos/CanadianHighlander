@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+gem 'sass', '~> 3.4'
+gem 'compass', '~> 1.0.3'
+
+# Cap gems
+gem 'capistrano', '~> 3.4'
+gem 'capistrano-npm', '~> 1.0.1'
+gem 'capistrano-bower', '~> 1.1.0'
+gem 'capistrano-grunt', '~> 0.0.4'
+gem 'capistrano-bundler', '~> 1.1.4'
