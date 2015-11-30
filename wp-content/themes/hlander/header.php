@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Ubuntu' rel='stylesheet' type='text/css'>
     <title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?></title>
 
     <!-- Bootstrap core CSS -->

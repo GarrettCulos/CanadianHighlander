@@ -1,0 +1,53 @@
+//colors
+$my-black:rgb(5,5,5);
+
+$dark-grey:rgb(15,15,15);
+$grey: rgb(20,20,20);
+$light-grey: rgb(40,40,40);
+
+$red:rgb(80,0,0);
+$light-red:rgb(160,0,0);
+
+$blue:rgb(0,80,0);
+$light-blue:rgb(0,160,0);
+
+$off-white: rgb(220,220,220);
+$off-white-light:rgb(240,240,240);
+
+// 	background color
+	$background-color:$my-black;
+	$background-color-red: $red;
+	$background-color-blue: $blue;
+
+// 	base colors 
+	$body-color: $off-white;
+	$body-color-hover:$off-white-light;
+	$body-color-active:$off-white-light;
+	$title-color:$off-white;
+	$title-color-hover:$off-white-light;
+	$title-color-active:$off-white-light;
+	$section-title-color:$off-white;
+	$section-title-color-hover:$off-white-light;
+	$section-title-color-active:$off-white-light;
+
+	$alt-body-color: $light-grey;
+	$alt-body-color-hover: $grey;
+	$alt-body-color-active: $grey;
+	$alt-title-color: $light-grey;
+	$alt-title-color-hover: $grey;
+	$alt-title-color-active: $grey;
+	$alt-section-title-color: $light-grey;
+	$alt-section-title-color-hover: $grey;
+	$alt-section-title-color-active: $grey;
+
+
+// fonts
+//	sizes
+	$large-font:2.1428em;
+	$medium-font:1.7142em;
+	$normal-P-font:1.2857em;
+	$normal-font: 1.1428em;
+
+//	family
+	$normal-font-family:'Raleway', sans-serif;
+	$accent-font-family:'Ubuntu', sans-serif;
