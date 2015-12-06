@@ -6,10 +6,12 @@
 
 ?>
 
-<div class="container">
-	<div class="col-md-12">
-		<p>Hellow Worlds</p>
+
+<div id="aboutHighlander">
+	<div class="container">
+		<div class="col-md-12">
+			<h2> Hello World</h2>
+		</div>
 	</div>
 </div>
-
 <?php get_footer(); ?>

@@ -11,7 +11,7 @@
     <title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/build/css/style.min.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/build/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

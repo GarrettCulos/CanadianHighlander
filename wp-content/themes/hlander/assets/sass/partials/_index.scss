@@ -1,3 +1,7 @@
-body{
-	background-colot:rgb(140,140,140)
+.home {
+	background-color:$background-color;
+	color:$body-color;
+	h2{
+		@include m-title-font;
+	}
 }

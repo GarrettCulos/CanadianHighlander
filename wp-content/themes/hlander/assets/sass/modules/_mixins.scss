@@ -3,9 +3,9 @@
  	font-size:$large-font;
  	font-family:$accent-font-family;
  	line-height:1em;
- 	color: $title-font;
- 	&:hover { color:$title-font-hover; }
- 	&:active { color:$title-font-active; }
+ 	color: $title-color;
+ 	&:hover { color:$title-color-hover; }
+ 	&:active { color:$title-color-active; }
  }
 
 // section title font
@@ -13,9 +13,9 @@
  	font-size:$medium-font;
  	font-family:$accent-font-family;
  	line-height:1em;
- 	color: $section-title-font;
- 	&:hover { color:$sectin-title-font-hover; }
- 	&:active { color:$section-title-font-active; }
+ 	color: $section-title-color;
+ 	&:hover { color:$sectin-title-color-hover; }
+ 	&:active { color:$section-title-color-active; }
  }
 
 // body font
@@ -23,9 +23,9 @@
  	font-size:$normal-font;
  	font-family:$normal-font-family;
  	line-height:1em;
- 	color: $body-font;
- 	&:hover { color:$body-font-hover; }
- 	&:active { color:$body-font-active; }
+ 	color: $body-color;
+ 	&:hover { color:$body-color-hover; }
+ 	&:active { color:$body-color-active; }
 }
 
 
