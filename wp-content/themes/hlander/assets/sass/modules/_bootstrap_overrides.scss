@@ -1,6 +1,27 @@
+// $nav-tabs-active-link-hover-color:white;
+// $nav-tabs-active-link-hover-bg:$nav-background-color;
+// $nav-tabs-active-link-hover-border-color: transparent;
+// $nav-tabs-link-hover-border-color: transparent;
+// $nav-tabs-border-color: $nav-background-color;
+$nav-link-hover-bg: transparent;
+$navbar-default-border: transparent;
+$navbar-default-bg:  $navbar-background-color;
 
 $navbar-default-link-color: $body-color;
 $navbar-default-link-hover-color: $body-color-hover;
 $navbar-default-link-active-color: $body-color-active;
-$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-hover-bg: $navbar-background-color;
 $navbar-default-link-active-bg: transparent;
+
+$carousel-control-color:transparent;
+$carousel-control-opacity:0;
+
+.carousel-inner {
+	.item {
+		img {
+			width:100%;
+		}
+	}	
+} 
+
+

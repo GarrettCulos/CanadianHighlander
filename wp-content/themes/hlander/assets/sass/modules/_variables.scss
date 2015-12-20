@@ -3,33 +3,36 @@ $my-black:rgb(5,5,5);
 
 $dark-grey:rgb(15,15,15);
 $grey: rgb(20,20,20);
-$light-grey: rgb(40,40,40);
+$light-grey: rgb(50,50,50);
+$lighter-grey: rgb(80,80,80);
 
-$red:rgb(80,0,0);
-$light-red:rgb(160,0,0);
+// $red:rgb(80,80,80);
+// $light-red:rgb(160,160,160);
 
-$blue:rgb(0,80,0);
-$light-blue:rgb(0,160,0);
+$blue:rgb(80,80,255);
+$light-blue:rgb(100,100,255);
 
-$off-white: rgb(220,220,220);
-$off-white-light:rgb(240,240,240);
+$mid-white: rgb(225,225,225);
+$off-white: rgb(245,245,245);
+$off-white-darker:rgb(220,220,220);
 
 // 	background color
-	$background-color:$my-black;
-	$background-color-red: $red;
+	$background-color:#2f2f2f;
+	$navbar-background-color:#2f2f2f;
+	// $background-color-red: $red;
 	$background-color-blue: $blue;
 
 // 	base colors 
 	$body-color: $off-white;
-	$body-color-hover:$off-white-light;
-	$body-color-active:$off-white-light;
+	$body-color-hover:$mid-white;
+	$body-color-active:$mid-white;
 	$title-color:$off-white;
-	$title-color-hover:$off-white-light;
-	$title-color-active:$off-white-light;
+	$title-color-hover:$mid-white;
+	$title-color-active:$mid-white;
 	$section-title-color:$off-white;
-	$section-title-color-hover:$off-white-light;
-	$section-title-color-active:$off-white-light;
-
+	$section-title-color-hover:$mid-white;
+	$section-title-color-active:$mid-white;
+	
 	$alt-body-color: $light-grey;
 	$alt-body-color-hover: $grey;
 	$alt-body-color-active: $grey;

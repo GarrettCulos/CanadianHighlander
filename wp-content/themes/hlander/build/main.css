@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* line 21, ../assets/sass/modules/_bootstrap_overrides.scss */
+.carousel-inner .item img {
+  width: 100%;
+}
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5444,7 +5449,7 @@ tbody.collapse.in {
 /* line 23, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 /* line 31, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 .nav > li.disabled > a {
@@ -5459,7 +5464,7 @@ tbody.collapse.in {
 }
 /* line 46, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: transparent;
   border-color: #337ab7;
 }
 /* line 59, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
@@ -6040,16 +6045,16 @@ tbody.collapse.in {
 }
 /* line 397, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #2f2f2f;
+  border-color: transparent;
 }
 /* line 401, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: gainsboro;
+  color: whitesmoke;
 }
 /* line 403, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #c3c3c3;
+  color: gainsboro;
   background-color: transparent;
 }
 /* line 410, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6058,16 +6063,16 @@ tbody.collapse.in {
 }
 /* line 415, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: gainsboro;
+  color: whitesmoke;
 }
 /* line 418, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #f0f0f0;
-  background-color: transparent;
+  color: #e1e1e1;
+  background-color: #2f2f2f;
 }
 /* line 425, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #f0f0f0;
+  color: #e1e1e1;
   background-color: transparent;
 }
 /* line 433, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6090,26 +6095,26 @@ tbody.collapse.in {
 /* line 453, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: transparent;
 }
 /* line 462, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
-  color: #f0f0f0;
+  color: #e1e1e1;
 }
 @media (max-width: 767px) {
   /* line 473, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: gainsboro;
+    color: whitesmoke;
   }
   /* line 475, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #f0f0f0;
-    background-color: transparent;
+    color: #e1e1e1;
+    background-color: #2f2f2f;
   }
   /* line 482, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #f0f0f0;
+    color: #e1e1e1;
     background-color: transparent;
   }
   /* line 490, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6120,19 +6125,19 @@ tbody.collapse.in {
 }
 /* line 506, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: gainsboro;
+  color: whitesmoke;
 }
 /* line 508, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
-  color: #f0f0f0;
+  color: #e1e1e1;
 }
 /* line 513, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: gainsboro;
+  color: whitesmoke;
 }
 /* line 515, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #f0f0f0;
+  color: #e1e1e1;
 }
 /* line 521, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
@@ -8270,10 +8275,10 @@ button.close {
   left: 0;
   bottom: 0;
   width: 15%;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0;
+  filter: alpha(opacity=0);
   font-size: 20px;
-  color: #fff;
+  color: transparent;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: transparent;
@@ -8299,7 +8304,7 @@ button.close {
 /* line 119, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control:hover, .carousel-control:focus {
   outline: 0;
-  color: #fff;
+  color: transparent;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -8793,21 +8798,73 @@ button.close {
 }
 /* line 1, ../assets/sass/partials/_index.scss */
 .home {
-  background-color: #050505;
-  color: gainsboro;
+  background-color: #2f2f2f;
+  color: whitesmoke;
 }
 /* line 4, ../assets/sass/partials/_index.scss */
 .home h2 {
   font-size: 2.1428em;
   font-family: "Ubuntu", sans-serif;
   line-height: 1em;
-  color: gainsboro;
+  color: whitesmoke;
 }
 /* line 7, ../assets/sass/modules/_mixins.scss */
 .home h2:hover {
-  color: #f0f0f0;
+  color: #e1e1e1;
 }
 /* line 8, ../assets/sass/modules/_mixins.scss */
 .home h2:active {
-  color: #f0f0f0;
+  color: #e1e1e1;
+}
+
+/* line 1, ../assets/sass/partials/header/_navbar.scss */
+.main-nav {
+  background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.4));
+}
+/* line 3, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+/* line 7, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container ul li {
+  padding: 0 30px;
+}
+/* line 10, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container ul li a {
+  font-size: 1.1em;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #e1e1e1;
+  padding: 18px 2px 15px;
+}
+/* line 19, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container ul li span {
+  font-size: 20px;
+}
+/* line 24, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container ul li:hover a {
+  color: whitesmoke;
+  border-bottom: 2px solid #5050ff;
+}
+/* line 31, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container ul .active a {
+  color: whitesmoke;
+  border-bottom: 2px solid #5050ff;
+}
+/* line 38, ../assets/sass/partials/header/_navbar.scss */
+.main-nav .nav-container .form-control {
+  background-color: #505050;
+  border-color: transparent;
+  color: whitesmoke;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 40px;
+  width: 500px;
+}
+
+/* line 51, ../assets/sass/partials/header/_navbar.scss */
+.navbar {
+  border: none;
 }
