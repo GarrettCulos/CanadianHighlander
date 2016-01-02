@@ -1,5 +1,4 @@
 GEM
-  remote: https://rubygems.org/
   specs:
     capistrano (3.4.0)
       i18n
@@ -54,7 +53,7 @@ DEPENDENCIES
   capistrano-grunt (~> 0.0.4)
   capistrano-npm (~> 1.0.1)
   compass (~> 1.0.3)
-  font-awesome-sass
+  font-awesome-sass (~> 4.5.0)
   sass (~> 3.4)
 
 BUNDLED WITH

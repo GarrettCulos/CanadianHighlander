@@ -10,11 +10,14 @@
 // Rest of the modules
 @import "modules/mixins";
 
-	//@import "modules/fonts";
 @import "partials/helpers";
+
+@import "font-awesome-compass";
+@import "font-awesome";
 
 // Impoprt from partials
 @import "partials/index";
+@import "partials/home";
 
 @import "partials/header/navbar";
 

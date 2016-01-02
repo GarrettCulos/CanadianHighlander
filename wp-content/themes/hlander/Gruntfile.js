@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
+
     compass:{
       dist: {                   // Target
         options: {              // Target options
@@ -41,6 +41,18 @@ module.exports = function(grunt) {
         dest: 'assets/css/style.min.css'
       }
     },
+    
+    copy: {
+      dist: {
+        files: [{
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/font-awesome',
+            src: ['fonts/*.*'],
+            dest: 'assets/fonts/font-awesome'
+        }]
+      }
+    }, 
 
     uglify: {
       options: {
@@ -72,6 +84,6 @@ module.exports = function(grunt) {
 
 
   // Register the default tasks.
-  grunt.registerTask('default', ['compass', 'bower_concat', 'cssmin', 'uglify']);
+  grunt.registerTask('default', ['copy','compass', 'bower_concat', 'cssmin', 'uglify']);
   grunt.registerTask('theme', ['compass', 'cssmin']);
 };
