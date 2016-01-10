@@ -15,7 +15,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!--script src="<?php echo get_template_directory_uri(); ?>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script -->
+    <script src="<?php echo get_template_directory_uri(); ?>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,4 +30,6 @@
     <div id="main">
       <h1 class="sr-only"><?php bloginfo('title'); ?></h1>
 
-      <?php get_template_part('nav'); ?>
+      <?php get_template_part('top_nav'); ?>
+
+      <?php get_template_part('side_nav'); ?>

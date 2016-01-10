@@ -8817,6 +8817,11 @@ button.close {
   color: #e1e1e1;
 }
 
+/* line 13, ../assets/sass/partials/_index.scss */
+#highlander-points {
+  margin-top: 50px;
+}
+
 /* line 1, ../assets/sass/partials/header/_navbar.scss */
 .main-nav {
   background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.4));
