@@ -8873,3 +8873,45 @@ button.close {
 .navbar {
   border: none;
 }
+
+/* line 80, icons/*.png */
+.icons-sprite, .icons.pin-icon, .icons.facebook-icon, .icons.cogs-icon, .icons.twitter-icon, .icons.youtube-icon {
+  background-image: url('../assets/img/icons-sc26db33874.png');
+  background-repeat: no-repeat;
+}
+
+/* line 19, ../assets/sass/partials/icons/_icons.scss */
+.icons.pin-icon {
+  background-position: 0 -128px;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+/* line 19, ../assets/sass/partials/icons/_icons.scss */
+.icons.facebook-icon {
+  background-position: 0 -64px;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+/* line 19, ../assets/sass/partials/icons/_icons.scss */
+.icons.cogs-icon {
+  background-position: 0 0;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+/* line 19, ../assets/sass/partials/icons/_icons.scss */
+.icons.twitter-icon {
+  background-position: 0 -192px;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+/* line 19, ../assets/sass/partials/icons/_icons.scss */
+.icons.youtube-icon {
+  background-position: 0 -256px;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}

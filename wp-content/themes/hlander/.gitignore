@@ -18,8 +18,8 @@ node_modules/
 bower_components/
 
 # Ignore compiled theme elements
-wp-content/themes/hlander/.sass-cache/
-wp-content/themes/hlander/build/
+wp-content/themes/hlander/.sass-cache/*
+wp-content/themes/hlander/build/*
 
 # Ignore system files
 .DS_Store

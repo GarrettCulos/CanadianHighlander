@@ -1,3 +1,9 @@
+<?php 
+/*
+	Side Navigation
+*/ 
+?>
+
 <div id="content-hl">
 
 	<div class="fluid-container">

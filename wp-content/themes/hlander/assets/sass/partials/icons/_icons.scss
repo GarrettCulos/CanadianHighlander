@@ -1,0 +1,32 @@
+@import "compass/utilities/sprites";
+
+$ico-sprite-dimensions: true;
+$icon-spacing: 5px;
+$mysprite-layout:smart;
+@import "icons/*.png";
+
+// $icons_sprite_url: sprite-url($icons_sprites);
+
+//list of sprite names
+$sprite_names: 	'pin',
+				'facebook',
+				'cogs',
+				'twitter',
+				'youtube';
+
+.icons {
+	@each $sprite_name in $sprite_names {
+		&.#{$sprite_name}-icon { 
+			@include icons-sprite(#{$sprite_name}); 
+			height: icons-sprite-height(#{$sprite_name});
+			width: icons-sprite-width(#{$sprite_name});
+			display: inline-block;
+		}
+	}
+}
+
+// to call these icons use <span class="icon #{icon_name}-icon" ></span> 
+//		e.g. <span class="icons facebook-icon" ></span> 
+
+// @import "icons2x/*.png";
+// $icons2x_sprite_url: sprite-url($icons2x_sprites);
