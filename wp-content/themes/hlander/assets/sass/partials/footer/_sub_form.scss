@@ -1,0 +1,59 @@
+.hl-sub-form {
+	h3 {
+		display:inline-block;
+		float:right;
+		padding:0;
+		margin:3px 0 0 0;
+	}
+	.hl-sub-email {
+		display:inline-block;
+		padding:6px 10px 6px 10px;
+		background-color:$off-white-darker;
+		width:100%;
+		label{
+			@include m-body-font;
+			color:$grey;
+			padding:0 5px 0 0;
+			margin:0;
+			&:hover{
+				color:$grey;
+			}
+		}
+
+		input{
+			@include m-body-font;
+			color:$grey;
+			border:none;
+			padding:0;
+			margin:0;
+			width: 70%;
+			outline: none;
+			background-color: transparent;
+		}
+
+
+	}
+	.hl-sub-input {
+		@include m-body-font;
+		padding:0 15px;
+		margin-top:6px;
+		input{
+			margin-right:7px
+		}
+	}
+
+	.hl-sub-button {
+		input{
+			@include m-body-font;
+			color:$grey;
+			border:transparent;
+			padding:8px 15px 7px 15px;
+			&:hover {
+				background-color:$blue;
+				color:$off-white;
+				border:transparent;
+			}
+		}
+	}
+
+}

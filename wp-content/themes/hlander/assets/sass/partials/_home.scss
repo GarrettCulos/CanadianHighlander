@@ -1,3 +1,19 @@
+.home {
+	background-color:$background-color;
+	color:$body-color;
+	h2{
+		@include m-title-font;
+	}
+
+}
+
+#aboutHighlander{
+	// margin-top:50px;
+}
+#highlander-points {
+	margin-top:50px;
+}
+
 .points-list {
 	ul {
 		li{

@@ -4,50 +4,41 @@
 */ 
 ?>
 
-<div id="content-hl">
-
+<div id="h1-content">
 	<div class="fluid-container">
-		
-		<div class="col-xs-3">
+		<div class="col-xs-2">
+			<div class="side-nav-wrapper">
+				<ul>
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/about">About</a>
+						<ul class="sub-nav"> 
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/about">Council</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/about">Points List</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/about">Rules</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/about">News</a></li>
+						</ul>
+					</li>
+					
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/decks">Decks</a>
+						<ul class="sub-nav"> 
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/decks">Archetypes</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/decks">Tear One</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/decks">Brews</a></li>
+						</ul>
+					</li>
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/articles">Articles</a>
+						<ul class="sub-nav"> 
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/articles">Monday Night Metas</a></li>
+							<li class="presentation"><a href="<?php echo get_template_directory_uri() ?>/articles">Deck-Techs</a></li>
+						</ul>
+					</li>
 
-			<ul class="side-nav-wrapper">
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/podcasts">Podcasts</a></li>
 
-				<li role="presentation"><a href="#">A</a>
-					<ul class="sub-nav"> 
-						<li class="presentation"><a href="#">A.a</a></li>
-						<li class="presentation"><a href="#">A.b</a></li>
-						<li class="presentation"><a href="#">A.c</a></li>
-					</ul>
-				</li>
-				<li role="presentation"><a href="#">B</a>
-					<ul class="sub-nav"> 
-						<li class="presentation"><a href="#">B.a</a></li>
-						<li class="presentation"><a href="#">B.b</a></li>
-						<li class="presentation"><a href="#">B.c</a></li>
-						<li class="presentation"><a href="#">B.d</a></li>
-						<li class="presentation"><a href="#">B.e</a></li>
-					</ul>
-				</li>
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/twitch">Twitch</a></li>
 
-				<li role="presentation"><a href="#">C</a></li>
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/contact">Contact Us</a></li>
 
-				<li role="presentation"><a href="#">D</a></li>
-
-				<li role="presentation"><a href="#">E</a></li>
-
-				<li role="presentation"><a href="#">F</a>
-					<ul class="sub-nav"> 
-						<li class="presentation"><a href="#">F.a</a></li>
-						<li class="presentation"><a href="#">F.b</a></li>
-						<li class="presentation"><a href="#">F.c</a></li>
-						<li class="presentation"><a href="#">F.d</a></li>
-					</ul>
-				</li>		
-
-			</ul>
-
-		</div>	
-
-	</div>
-
-	<div class="col-xs-9">
+				</ul>	
+			</div>
+		</div>
+		<div class="col-xs-10">

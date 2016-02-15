@@ -1,51 +1,118 @@
-.main-nav{
-	background:linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
-	.nav-container{
-		margin-right:40px;
-		margin-left:40px;
-		ul {
-	 	 	li {
-				padding:0 30px;
+#hl-header {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:100;
 
-	 	 		a {
-				 	font-size:1.1em;
-				 	font-family:$accent-font-family;
-				 	line-height:1em;
-				 	text-transform: uppercase;
-				 	color: $mid-white;
-				 	padding:18px 2px 15px;
-	 	 		}
-
-	 	 		span{
-	 	 			font-size:20px;
-	 	 		}
-
-	 	 		&:hover { 
-					a {
-				 		color:$off-white;
-				 		border-bottom:2px solid $blue;
-					}
-			 	}
-	 	 	}
-	 	 	.active { 
-		 		a{
-		 			color:$off-white; 
-		 			border-bottom:2px solid $blue;	
-		 		}	 		
-		 	}
-	 	}
-	 	
-	 	.form-control {
-	 		background-color:$lighter-grey;
-	 		border-color:transparent;
-	 		color:$off-white;
-	 		padding-right:20px;
-	 		padding-left:20px;
-	 		height:40px;
-	 		width:500px;
-	 	}
+	.hl-top-nav {
+		width:100%;
+		background-color:$grey;
+		padding: 6px 15px 7px;
 	}
 
+	.nav-icon {
+		display:inline-block;
+	}
+	
+	.hl-search-container,
+	.hl-left-container,
+	.hl-right-container{
+		@include m-body-font;
+		vertical-align: middle;
+	}	
+
+	.hl-left-container{
+		display:inline-block;
+		padding:0 15px;
+
+		a{
+			font-family:$accent-font-family;
+			font-size:$medium-font;
+			color: $mid-white;
+			line-height:1em;
+			text-transform: uppercase;
+			text-decoration:none;
+			&:hover{
+				color:$blue;
+			}
+		}
+	}
+
+	.hl-search-container {
+		display:inline-block;
+		padding:0 15px;
+
+		.hl-utility-bar {
+			display:inline-block;
+			background-color:$mid-white;
+			padding:2px 0;
+			height:100%;
+
+			.hl-utility-button{
+				display:inline-block;
+				padding:0 15px;
+
+				svg{
+					height:1em;
+					font-size:$normal-font;
+				    vertical-align: middle;
+
+					rect,
+					path{
+						fill:$grey;
+					}
+				}
+			}
+
+			input{
+				display:inline-block;
+				background-color:transparent;
+				min-width:300px;
+				height:100%;
+				height:30px;
+				border:0;
+				margin:0;
+				
+				&:focus{
+					box-shadow:none;
+				}
+			}
+		}
+
+		.hl-form-control {
+			display:inline-block;
+		}
+	}
+
+	.hl-right-container {
+		display:inline-block;
+
+		a {
+			padding:0 15px;
+
+			svg {
+				width:auto;
+				line-height:1em;
+				height:1em;
+				font-size:$normal-font;
+				vertical-align: middle;
+
+				rect,
+				path{
+					fill:$mid-white;
+				}
+			}
+			&:hover svg {
+				rect,
+				path {
+					fill:$blue;
+				}
+			}
+
+		}
+	}
+	
 }
 
 .navbar {

@@ -14,11 +14,13 @@
 @import "partials/helpers";
 
 // Impoprt from partials
-@import "partials/index";
+@import "partials/home";
 
 @import "partials/header/navbar";
+@import "partials/side_nav";
 
 @import "partials/footer/footer";
+@import "partials/footer/sub_form";
 
 // Import Sprites
 @import "partials/icons/icons";

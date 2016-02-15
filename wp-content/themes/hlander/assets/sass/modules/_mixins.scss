@@ -24,8 +24,13 @@
  	font-family:$normal-font-family;
  	line-height:1em;
  	color: $body-color;
+}
+@mixin m-body-font-hover{
+ 	font-size:$normal-font;
+ 	font-family:$normal-font-family;
+ 	line-height:1em;
+ 	color: $body-color;
  	&:hover { color:$body-color-hover; }
  	&:active { color:$body-color-active; }
 }
-
 
