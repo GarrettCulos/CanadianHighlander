@@ -9,13 +9,13 @@
  * @since Highlander 1.0
  *
  **/
-
- ?>
+the_post();
+?>
 
 <div id="highlander-monday-night-metas">
 	<div class="col-xs-12">
 		<div class="back">
-			
+		<a href="#"><< Back</a>
 		</div>
 
 		<div class="post-container">
@@ -25,7 +25,7 @@
 				<h2><?php the_date('F j, Y'); ?></h2>
 				<p>Players - <?php echo $post_meta['players']?> </p>
 				<p>Archetypes - <?php echo $post_meta['archetypes']?> </p>
-				<p><?php the_content(); ?></p>
+				<?php echo the_content(); ?>
 			</div>
 		</div>
 	</div>		

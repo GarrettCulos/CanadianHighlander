@@ -11,13 +11,6 @@ function hl_get_svg_directory() {
   return get_template_directory_uri() . '/assets/img/svg';
 }
 
-function test_shortcodes()
-{
-    return 'Shortcodes are working!';
-}
-
-add_shortcode('test_shortcodes', 'test_shortcodes');
-
 function create_post_types() {
 
   register_post_type( 'council',
@@ -39,9 +32,10 @@ function create_post_types() {
         'name' => __( 'Deck Lists' ),
         'singular_name' => __( 'Deck' )
       ),
-      'public' => true,
-      'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
+      'public'              => true,
+      'hierarchical'        => false,
+      'has_archive'         => true,
+      'supports'            => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 
     )
   );
@@ -52,6 +46,7 @@ function create_post_types() {
         'name' => __( 'Monday Night Meta' ),
         'singular_name' => __( 'Monday Night Meta' )
       ),
+      'hierarchical'        => false,
       'public' => true,
       'has_archive' => true,
       'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),

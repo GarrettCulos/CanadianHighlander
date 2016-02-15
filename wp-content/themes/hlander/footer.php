@@ -13,10 +13,10 @@
 				</div>
 				<div class="col-sm-4 col-xs-12">
 					<h2><a href="<?php echo get_template_directory_uri () ?>/about">About</a></h2>
-					<h3><a href="<?php echo get_template_directory_uri () ?>/about">Council</a></h3>
-					<h3><a href="<?php echo get_template_directory_uri () ?>/about">Points List</a></h3>
-					<h3><a href="<?php echo get_template_directory_uri () ?>/about">Rules</a></h3>
-					<h3><a href="<?php echo get_template_directory_uri () ?>/about">News</a></h3>
+					<h3><a href="<?php echo get_template_directory_uri () ?>/about/#council">Council</a></h3>
+					<h3><a href="<?php echo get_template_directory_uri () ?>/about/#points-list">Points List</a></h3>
+					<h3><a href="<?php echo get_template_directory_uri () ?>/about/#rules">Rules</a></h3>
+					<h3><a href="<?php echo get_template_directory_uri () ?>/about/#news">News</a></h3>
 				</div>
 				<div class="col-sm-4 col-xs-12">
 					<h2><a href="<?php echo get_template_directory_uri () ?>/podcasts">Podcasts</a></h2>
