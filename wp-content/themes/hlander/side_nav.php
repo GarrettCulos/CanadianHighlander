@@ -34,6 +34,8 @@
 
 					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/podcasts">Podcasts</a></li>
 
+					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/youtube">Youtube</a></li>
+
 					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/twitch">Twitch</a></li>
 
 					<li role="presentation"><a href="<?php echo get_template_directory_uri() ?>/contact">Contact Us</a></li>

@@ -9,6 +9,7 @@
  * @since Highlander 1.0
  *
  **/
+$contact_fields = get_fields();
 ?>
 
 <!-- Contact Highlander Council -->

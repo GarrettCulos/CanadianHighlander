@@ -9,9 +9,13 @@
  * @since Highlander 1.0
  *
  **/
+$twitch_fields = get_fields();
 ?>
-<div class="hl-twitch-window">
-	
+
+<div class="twitch-window">
+
+	<h3> This is the Twitch Page </h3>
+
 </div>
 
 <?php get_footer() ?>

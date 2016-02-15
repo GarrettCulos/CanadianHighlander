@@ -22,6 +22,7 @@
 					<h2><a href="<?php echo get_template_directory_uri () ?>/podcasts">Podcasts</a></h2>
 					<h2><a href="<?php echo get_template_directory_uri () ?>/twitch">Twitch</a></h2>
 					<h2><a href="<?php echo get_template_directory_uri () ?>/contact">Contact Us</a></h2>
+					<h2><a href="<?php echo get_template_directory_uri () ?>/youtube">Youtube</a></h2>
 				</div>
 			</div>
 		</div>

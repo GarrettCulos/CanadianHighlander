@@ -9,6 +9,7 @@
  * @since Highlander 1.0
  *
  **/
+$ACF_fields = get_fields();
 the_post();
 ?>
 

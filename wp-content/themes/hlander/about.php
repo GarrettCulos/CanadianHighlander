@@ -11,7 +11,6 @@
  **/
  
 $about_fields = get_fields(); 
-
 ?>
 
 <!-- Highlander News -->
