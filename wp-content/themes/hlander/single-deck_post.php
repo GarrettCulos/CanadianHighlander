@@ -26,8 +26,6 @@ the_post();
 				<div class="deck-info-item"> <?php echo $post_meta['colors'] ?></div>
 				<div class="deck-info-item"> <?php echo $post_meta['dating'] ?></div>
 				<!-- loop through cards in deck -->
-				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
-
 				<div class="deck-date">Date modified: <?php the_date('F j, Y'); ?></h2>
 			</div>
 		</div>
