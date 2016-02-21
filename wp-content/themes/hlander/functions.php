@@ -21,8 +21,19 @@ function create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
+      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
+    )
+  );
 
+  register_post_type( 'podcasts',
+    array(
+      'labels' => array(
+        'name' => __( 'Podcasts' ),
+        'singular_name' => __( 'Podcast' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
     )
   );
 
@@ -35,8 +46,7 @@ function create_post_types() {
       'public'              => true,
       'hierarchical'        => false,
       'has_archive'         => true,
-      'supports'            => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
-
+      'supports'            => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
     )
   );
 
@@ -49,8 +59,7 @@ function create_post_types() {
       'hierarchical'        => false,
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
-
+      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
     )
   );
 
@@ -62,8 +71,7 @@ function create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
-
+      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
     )
   );
 
@@ -75,8 +83,7 @@ function create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
-
+      'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' )
     )
   );
 

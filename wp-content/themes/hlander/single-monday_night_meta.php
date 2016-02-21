@@ -9,7 +9,7 @@
  * @since Highlander 1.0
  *
  **/
-$ACF_fields = get_fields();
+$ACF_fields = get_fields(); /** background Images ect... **/
 the_post();
 ?>
 

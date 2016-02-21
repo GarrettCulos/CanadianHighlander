@@ -41,7 +41,8 @@
 			$args = array( 
 				'post_type' => array(
 						'article',
-						'monday_night_meta'
+						'monday_night_meta',
+						'podcasts'
 					),
 				'numberposts' => 4,
 				'orderby' => 'post_date'
