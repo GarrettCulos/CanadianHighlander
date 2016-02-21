@@ -3,7 +3,7 @@
  * @package WordPress
  * @subpackage Farmco
  * @since Farmco 1.0
- */
+ **/
 
 add_filter( 'jetpack_development_mode', '__return_true' );
 
@@ -25,11 +25,11 @@ function create_post_types() {
     )
   );
 
-  register_post_type( 'podcasts',
+  register_post_type( 'podcasts_tcobo',
     array(
       'labels' => array(
         'name' => __( 'Podcasts' ),
-        'singular_name' => __( 'Podcast' )
+        'singular_name' => __( 'Episode' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -102,5 +102,7 @@ function create_post_types() {
 }
 add_action( 'init', 'create_post_types');
 
-
+@ini_set( 'upload_max_size' , '128M' );
+@ini_set( 'post_max_size', '128M');
+@ini_set( 'max_execution_time', '300' );
 ?>

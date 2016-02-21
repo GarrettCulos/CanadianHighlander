@@ -42,9 +42,9 @@
 				'post_type' => array(
 						'article',
 						'monday_night_meta',
-						'podcasts'
+						'podcasts_tcobo'
 					),
-				'numberposts' => 4,
+				'numberposts' => 8,
 				'orderby' => 'post_date'
 				);
 			$loop = new WP_Query( $args );
@@ -73,6 +73,17 @@
 							<p><?php the_excerpt(); ?></p>
 							<a href="<?php the_permalink() ?>">See Full Report</a>
 						</div>
+					</div>
+				<?php elseif(get_post_type($post)=='podcasts_tcobo'):?>
+					<div class="post-container">
+						<a href="<?php echo the_permalink() ?>" >	
+							<?php $post_meta = (get_fields($post));?>
+							<li>
+								<div class="tcobo-title"> <?php echo $post_meta['episode_title'] ?></div>
+								<div class="tcobo-description"> <?php echo $post_meta['episode_description'] ?></div>
+								<div class="tcobo-guest"> Featuring <?php echo $post_meta['featured_guest'] ?></div>
+							</li>
+						</a>
 					</div>
 				<?php else: ?>
 				<?php endif; ?>
