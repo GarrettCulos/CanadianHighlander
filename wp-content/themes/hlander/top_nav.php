@@ -21,10 +21,10 @@
 				
 			</div>
 			<div class="hl-right-container">
-				<a class="nav-icon" href="https://www.facebook.com/groups/288447914624649/"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/facebook.svg"> </a>
-				<a class="nav-icon" href="https://twitter.com/search?q=canadian%20highlander&src=typd&lang=en"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/twitter.svg"> </a>
-				<a class="nav-icon" href="https://www.youtube.com/channel/UCbdfxCOi0vvWXFqSHfrywvw"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/youtube.svg"> </a>		
-				<a class="nav-icon" href="http://www.twitch.tv/canhighlander/profile"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/twitch.svg"> </a>
+				<a class="nav-icon" href="https://www.facebook.com/groups/288447914624649/" target="_blank"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/facebook.svg"> </a>
+				<a class="nav-icon" href="https://twitter.com/search?q=canadian%20highlander&src=typd&lang=en" target="_blank"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/twitter.svg"> </a>
+				<a class="nav-icon" href="https://www.youtube.com/channel/UCbdfxCOi0vvWXFqSHfrywvw" target="_blank"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/youtube.svg"> </a>		
+				<a class="nav-icon" href="http://www.twitch.tv/canhighlander/profile" target="_blank"><img class="svg" src="<?php echo hl_get_svg_directory(); ?>/twitch.svg"> </a>
 			</div>
 		</div>
 

@@ -4,14 +4,26 @@
 	h2{
 		@include m-title-font;
 	}
+}
 
+#main {
+	margin-top:49px;
 }
 
 #aboutHighlander{
 	// margin-top:50px;
 }
+
 #highlander-points {
-	margin-top:50px;
+	// margin-top:50px;
+}
+
+#hl-content {
+	// margin-top:47px;
+}
+
+#hl-main-content {
+	min-height:500px;
 }
 
 .points-list {

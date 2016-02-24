@@ -4,12 +4,13 @@ footer{
 		@include m-body-font;
 		display:table;
 		width:100%;
+		border-top:2px solid $light-grey
 	}
 
 	.hl-footer-top {
 		padding-top:15px;
 		padding-bottom:15px;
-		background-color:$light-grey;
+		background-color:$dark-grey;
 		
 		h2 {
 			border-top:1px;
@@ -50,7 +51,7 @@ footer{
 
 	.hl-footer-bottom {
 		padding:15px 0;
-		background-color:$grey;
+		background-color:$my-black;
 		h3{
 			margin:0;
 		}

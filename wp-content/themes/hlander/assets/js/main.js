@@ -16,6 +16,7 @@ window.onresize = function(event) {
 
 };
 
+
 $(document).ready(function() {
 	/*
      * Replace all SVG images with inline SVG
@@ -48,8 +49,7 @@ $(document).ready(function() {
             $img.replaceWith($svg);
 
         }, 'xml');
-
-	});
+	});    
 
     setTimeout(function(){ 
         // Set width of search bar in nav on loading page
@@ -59,5 +59,37 @@ $(document).ready(function() {
         var buttonWidth = $(".hl-search-container .hl-utility-button").width();
         $(".hl-search-container .hl-utility-bar input").css("width", topNavWidth - logoWidth - buttonWidth - iconWidth - 100);
     }, 10);
+    /*
+    * Set side navigation height
+    */
+    var $container = $('#hl-main-content');
+    var headerHeight = $('#hl-header').height();
+    var containerHeight = inViewport($container);
+    var scrollDistance = $('body').scrollTop();
+    if(scrollDistance<50){// console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
+        $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
+    }else{
+        $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
+    }
+});
+
+function inViewport($el) {
+    var elH = $el.outerHeight(),
+        H   = $(window).height(),
+        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? Math.min(elH, H-t) : (b<H?b:H));
+}
+
+$(window).on( 'scroll', function(){
+    var $container = $('#hl-main-content');
+    var headerHeight = $('#hl-header').height();
+    var containerHeight = inViewport($container);
+    var scrollDistance = $('body').scrollTop();
+    if(scrollDistance<50){
+    // console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
+        $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
+    }else{
+        $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
+    }
 
 });

@@ -32,4 +32,9 @@
 
       <?php get_template_part('top_nav'); ?>
 
-      <?php get_template_part('side_nav'); ?>
+      <div id="hl-content">
+        <div class="fluid-container">
+          <?php get_template_part('side_nav'); ?>
+
+          <div id="hl-main-content" class="col-xs-offset-2 col-xs-10">
+

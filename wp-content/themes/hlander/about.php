@@ -24,10 +24,11 @@ $about_fields = get_fields();
 		<a href="<?php the_permalink() ?>" >	
 			<div class="post-container">
 				<?php $post_meta = (get_fields($post));?>
+					<img src=""> 
 				<div class="entry-content">
-					<h3><?php the_title(); ?></h3>
-					<h2><?php the_date('F j, Y'); ?></h2>
-					<p><?php the_content(); ?></p>
+					<h3 class="title"><?php the_title(); ?> - <div class="news-date"><?php the_date('F j, Y'); ?></div></h3>	
+					
+					<div class="news-content"><?php the_content(); ?></div>
 				</div>
 			</div>
 		</a>
@@ -47,25 +48,29 @@ $about_fields = get_fields();
 		
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php $post_meta = (get_fields($post));?>
-		<h3>Points List</h3>
-		<h4>Last updated: <?php echo $post_meta['date_updated']?></h4>
-		 <ul>
-		 	<?php foreach($post_meta['pointed_cards'] as $item):  ?>
-				<li><?php echo $item['name'] ?> – <?php echo $item['point_value'] ?></li>
-			<?php endforeach; ?>
-		</ul>
+		<div class="post-container">
+			<h3 class="title">Points List</h3>
+			<h4>Last updated: <?php echo $post_meta['date_updated']?></h4>
+			<ul>
+			 	<?php foreach($post_meta['pointed_cards'] as $item):  ?>
+					<li><?php echo $item['name'] ?> – <?php echo $item['point_value'] ?></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
 	<?php endwhile; ?>
 </div>
 
 <!-- Highlander News -->
 <div id="rules">
-	<h3> The Game </h3>
-	<p>	<?php echo $about_fields['the_game']; ?></p>
+	<div class="post-container">
+		<h3 class="title"> The Game </h3>
+		<p>	<?php echo $about_fields['the_game']; ?></p>
 
-	<br>
+		<br>
 
-	<h3> History </h3>
-	<p>	<?php echo $about_fields['history']; ?></p>
+		<h3 class="title"> History </h3>
+		<p>	<?php echo $about_fields['history']; ?></p>
+	</div>
 </div>
 
 <!-- Highlander News -->
@@ -81,28 +86,29 @@ $about_fields = get_fields();
 		
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php $post_meta = (get_fields($post));?>
-		<h3>Current Council Members (<span class="date"> Active since <?php the_date('F j, Y'); ?></span>):</h3>
-		<?php foreach($post_meta['members'] as $item):  ?>
-			<div class="col-sm-5">
-				<div class="member-name">
-					<?php echo $item['name'] ?>
+		<div class="post-container">
+			<h3 class="title">Current Council Members (<span class="date"> Active since <?php the_date('F j, Y'); ?></span>):</h3>
+			<?php foreach($post_meta['members'] as $item):  ?>
+				<div class="col-sm-5">
+					<div class="member-name">
+						<?php echo $item['name'] ?>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-7">
-				<div class="member-description">
-					<?php echo $item['description'] ?>
-				</div>	
-			</div>
-		<?php endforeach; ?>
+				<div class="col-sm-7">
+					<div class="member-description">
+						<?php echo $item['description'] ?>
+					</div>	
+				</div>
+			<?php endforeach; ?>
 
-		<h3> Concil Log </h3>
-		<?php foreach($post_meta['log_report'] as $item):  ?>
-			<div class="col-xs-12">
-				<div class="log-entry">
-					<?php echo $item['log'] ?>
-				</div>
+			
+			<h4 class="sub-title"> Concil Log </h4>
+			<?php foreach($post_meta['log_report'] as $item):  ?>
+			<div class="log-entry">
+				<?php echo $item['log'] ?>
 			</div>
-		<?php endforeach; ?>			
+			<?php endforeach; ?>	
+		</div>		
 	<?php endwhile; ?>
 </div>
 

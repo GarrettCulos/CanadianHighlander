@@ -1,19 +1,106 @@
-#h1-content {
-	margin-top:85px;
-	min-height:500px;
+
+.side-nav-wrapper {
+	width:16.5%;
+	height:100%;
+	padding-top:15px;
+
+	border-top:2px solid $light-grey;
+	border-bottom:2px solid $light-grey;
+	position:fixed;
+	overflow-y:scroll;
+	background-color:$dark-grey;
+	//text 
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $mid-white;
+
+	> ul{
+		padding-left:15px;
+	}
 	
-	.side-nav-wrapper {
-		background-color:$off-white-darker;
-		padding:15px 0;
+	ul{
+		li{
+			padding:7px 0px;
+		}
 	}
 
-	ul {
-		padding:0;
-		list-style-type: none;
-		li {
-			padding-left:15px;
-			padding-top:5px;
-			list-style-type: none;
+	a{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $mid-white;
+		svg{
+			display:inline-block;
+			height:1.2em;
+			width:1.2em;
+			margin-right:10px;
+			font-size:inherit;
+		    vertical-align: middle;
+
+			circle,
+			polygon,
+			rect,
+			path{
+				fill:$mid-white;
+			}
 		}
+		&:hover {
+			color:#fff;
+			svg{
+				circle,
+				polygon,
+				rect,
+				path{
+					fill:#fff;
+				}
+			}
+		}
+	}
+
+
+	.sub-nav {
+		a{
+			list-style-type: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			svg{
+				display:inline-block;
+				height:1.2em;
+				width:1.2em;
+				margin-right:10px;
+				font-size:inherit;
+			    vertical-align: middle;
+
+				circle,
+				polygon,
+				rect,
+				path{
+					fill:$mid-white;
+				}
+			}
+			&:hover {
+				color:#fff;
+				svg{
+					circle,
+					polygon,
+					rect,
+					path{
+						fill:#fff;
+					}
+				}
+			}
+		}
+		ul{
+			li{
+				padding:7px 0;
+			}
+		}
+	}
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	li {
+		list-style-type: none;
 	}
 }

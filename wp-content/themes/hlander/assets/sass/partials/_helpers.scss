@@ -6,3 +6,17 @@ body {
 	background-color:$background-color;
 	color:$body-color;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:transparent;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: $lighter-grey;
+  border-radius:2px;
+  outline: 1px solid $lighter-grey;
+}
