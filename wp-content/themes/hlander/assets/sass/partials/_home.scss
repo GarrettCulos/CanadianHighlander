@@ -2,7 +2,7 @@
 	background-color:$background-color;
 	color:$body-color;
 	h2{
-		@include m-title-font;
+		@include m-title-font-hover;
 	}
 }
 

@@ -16,8 +16,8 @@ $about_fields = get_fields();
 <!-- Highlander News -->
 <div id="news">
 	<?php 
-	$args = array( 'post_type' => 'news');
-	$loop = new WP_Query( $args );
+		$args = array( 'post_type' => 'news');
+		$loop = new WP_Query( $args );
 	?>
 
 	<?php while ( $loop->have_posts() ) : $loop->the_post();?>
@@ -48,27 +48,34 @@ $about_fields = get_fields();
 		
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php $post_meta = (get_fields($post));?>
-		<div class="post-container">
-			<h3 class="title">Points List</h3>
-			<h4>Last updated: <?php echo $post_meta['date_updated']?></h4>
-			<ul>
-			 	<?php foreach($post_meta['pointed_cards'] as $item):  ?>
-					<li><?php echo $item['name'] ?> – <?php echo $item['point_value'] ?></li>
-				<?php endforeach; ?>
-			</ul>
+		<div class="banner">
+			<div class="banner-image image-blur" data-background-img="<?php echo $post_meta['banner_image']['url']?>"></div>
+			<div class="title">The Points List</div>
 		</div>
+			<div class="post-container">
+				<h4>Last updated: <?php echo $post_meta['date_updated']?></h4>
+			 	<?php foreach($post_meta['pointed_cards'] as $item):  ?>
+					<div class="col-sm-6 col-xs-12"><p><?php echo $item['name'] ?> – <?php echo $item['point_value'] ?></p></div>
+				<?php endforeach; ?>	
+			</div>
 	<?php endwhile; ?>
 </div>
 
 <!-- Highlander News -->
 <div id="rules">
+	<div class="banner">
+		<div class="banner-image image-blur" data-background-img="<?php echo $about_fields['the_game_banner_image']['url']?>"></div>
+		<div class="title">The Game</div>
+	</div>
 	<div class="post-container">
-		<h3 class="title"> The Game </h3>
 		<p>	<?php echo $about_fields['the_game']; ?></p>
-
+	</div>
 		<br>
-
-		<h3 class="title"> History </h3>
+	<div class="banner">
+		<div class="banner-image image-blur" data-background-img="<?php echo $about_fields['history_banner_image']['url']?>"></div>
+		<div class="title">History </div>
+	</div>
+	<div class='post-container'>
 		<p>	<?php echo $about_fields['history']; ?></p>
 	</div>
 </div>
@@ -83,11 +90,13 @@ $about_fields = get_fields();
 		);
 	$loop = new WP_Query( $args );
 	?>
-		
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php $post_meta = (get_fields($post));?>
+		<div class="banner">
+			<div class="banner-image image-blur" data-background-img="<?php echo $post_meta['banner_image']['url'] ?>"></div>
+			<div class="title">Current Council Members <br> (<span class="date"> Active since <?php echo the_date('F j, Y'); ?></span>)</div>
+		</div>
 		<div class="post-container">
-			<h3 class="title">Current Council Members (<span class="date"> Active since <?php the_date('F j, Y'); ?></span>):</h3>
 			<?php foreach($post_meta['members'] as $item):  ?>
 				<div class="col-sm-5">
 					<div class="member-name">
@@ -102,7 +111,7 @@ $about_fields = get_fields();
 			<?php endforeach; ?>
 
 			
-			<h4 class="sub-title"> Concil Log </h4>
+			<div class="sub-title"> Concil Log </div>
 			<?php foreach($post_meta['log_report'] as $item):  ?>
 			<div class="log-entry">
 				<?php echo $item['log'] ?>

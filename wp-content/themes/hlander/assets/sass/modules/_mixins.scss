@@ -2,7 +2,14 @@
  @mixin m-title-font{
  	font-size:$large-font;
  	font-family:$accent-font-family;
- 	line-height:1em;
+ 	line-height:1.2em;
+ 	color: $title-color;
+ }
+ 
+ @mixin m-title-font-hover{
+ 	font-size:$large-font;
+ 	font-family:$accent-font-family;
+ 	line-height:1.2em;
  	color: $title-color;
  	&:hover { color:$title-color-hover; }
  	&:active { color:$title-color-active; }
@@ -10,6 +17,13 @@
 
 // section title font
 @mixin m-sectin-title-font{
+ 	font-size:$medium-font;
+ 	font-family:$accent-font-family;
+ 	line-height:1em;
+ 	color: $section-title-color;
+ }
+
+@mixin m-sectin-title-font-hover{
  	font-size:$medium-font;
  	font-family:$accent-font-family;
  	line-height:1em;
@@ -22,13 +36,13 @@
 @mixin m-body-font{
  	font-size:$normal-font;
  	font-family:$normal-font-family;
- 	line-height:1em;
+ 	line-height:1.4em;
  	color: $body-color;
 }
 @mixin m-body-font-hover{
  	font-size:$normal-font;
  	font-family:$normal-font-family;
- 	line-height:1em;
+ 	line-height:1.4em;
  	color: $body-color;
  	&:hover { color:$body-color-hover; }
  	&:active { color:$body-color-active; }

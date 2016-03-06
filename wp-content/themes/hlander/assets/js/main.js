@@ -51,6 +51,12 @@ $(document).ready(function() {
         }, 'xml');
 	});    
 
+    $('.banner-image').each(function(){
+        var $this = $(this);
+        var imageUrl = $this.data('backgroundImg');
+        $this.css('background-image', 'url(' + imageUrl + ')');
+    });
+
     setTimeout(function(){ 
         // Set width of search bar in nav on loading page
         var topNavWidth = $('.hl-top-nav').width();
