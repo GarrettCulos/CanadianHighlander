@@ -1,0 +1,25 @@
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/**/*
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+/readme.html
+/license.txt
+
+# Ignore package manager content
+node_modules/
+bower_components/
+
+# Ignore compiled theme elements
+wp-content/themes/hlander/.sass-cache/
+wp-content/themes/hlander/build/
+
+# Ignore system files
+.DS_Store
