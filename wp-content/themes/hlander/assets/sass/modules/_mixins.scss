@@ -48,3 +48,14 @@
  	&:active { color:$body-color-active; }
 }
 
+@mixin btn-style {
+	padding:10px 15px 9px;
+	text-transform:uppercase;
+	background-color:$blue;
+	border:none;
+	color:$off-white;
+	&:hover{
+		background-color:$light_red;
+		color:white;
+	}
+}

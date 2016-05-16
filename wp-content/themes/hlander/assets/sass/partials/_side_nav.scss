@@ -1,18 +1,19 @@
 
 .side-nav-wrapper {
+	visibility:hidden;
 	width:16.5%;
 	height:100%;
 	padding-top:15px;
 
-	border-top:2px solid $light-grey;
-	border-bottom:2px solid $light-grey;
+	border-top:2px solid $light_grey;
+	border-bottom:2px solid $light_grey;
 	position:fixed;
 	overflow-y:scroll;
-	background-color:$dark-grey;
+	background-color:$dark_grey;
 	//text 
 	text-decoration: none;
 	text-transform: uppercase;
-	color: $mid-white;
+	color: $mid_white;
 
 	> ul{
 		padding-left:15px;
@@ -27,7 +28,7 @@
 	a{
 		text-decoration: none;
 		text-transform: uppercase;
-		color: $mid-white;
+		color: $mid_white;
 		svg{
 			display:inline-block;
 			height:1.2em;
@@ -40,7 +41,7 @@
 			polygon,
 			rect,
 			path{
-				fill:$mid-white;
+				fill:$mid_white;
 			}
 		}
 		&:hover {
@@ -74,7 +75,7 @@
 				polygon,
 				rect,
 				path{
-					fill:$mid-white;
+					fill:$mid_white;
 				}
 			}
 			&:hover {

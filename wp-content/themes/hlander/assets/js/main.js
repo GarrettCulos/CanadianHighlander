@@ -16,7 +16,6 @@ window.onresize = function(event) {
 
 };
 
-
 $(document).ready(function() {
 	/*
      * Replace all SVG images with inline SVG
@@ -51,51 +50,80 @@ $(document).ready(function() {
         }, 'xml');
 	});    
 
-    $('.banner-image').each(function(){
-        var $this = $(this);
-        var imageUrl = $this.data('backgroundImg');
-        $this.css('background-image', 'url(' + imageUrl + ')');
+    // $('.banner-image').each(function(){
+    //     var $this = $(this);
+    //     var imageUrl = $this.data('backgroundImg');
+    //     $this.css('background-image', 'url(' + imageUrl + ')');
+    // });
+
+    // setTimeout(function(){ 
+    //     // Set width of search bar in nav on loading page
+    //     var topNavWidth = $('.hl-top-nav').width();
+    //     var logoWidth = $(".hl-left-container").width();
+    //     var iconWidth = $(".hl-right-container").width();
+    //     var buttonWidth = $(".hl-search-container .hl-utility-button").width();
+    //     $(".hl-search-container .hl-utility-bar input").css("width", topNavWidth - logoWidth - buttonWidth - iconWidth - 100);
+    // }, 10);
+    // /*
+    // * Set side navigation height
+    // */
+    // var $container = $('#hl-main-content');
+    // var headerHeight = $('#hl-header').height();
+    // var containerHeight = inViewport($container);
+    // var scrollDistance = $('body').scrollTop();
+    // if(scrollDistance<50){// console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
+    //     $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
+    // }else{
+    //     $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
+    // }
+
+
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
     });
 
-    setTimeout(function(){ 
-        // Set width of search bar in nav on loading page
-        var topNavWidth = $('.hl-top-nav').width();
-        var logoWidth = $(".hl-left-container").width();
-        var iconWidth = $(".hl-right-container").width();
-        var buttonWidth = $(".hl-search-container .hl-utility-button").width();
-        $(".hl-search-container .hl-utility-bar input").css("width", topNavWidth - logoWidth - buttonWidth - iconWidth - 100);
-    }, 10);
-    /*
-    * Set side navigation height
-    */
-    var $container = $('#hl-main-content');
-    var headerHeight = $('#hl-header').height();
-    var containerHeight = inViewport($container);
-    var scrollDistance = $('body').scrollTop();
-    if(scrollDistance<50){// console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
-        $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
-    }else{
-        $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
-    }
-});
+    function hamburger_cross() {
 
-function inViewport($el) {
-    var elH = $el.outerHeight(),
-        H   = $(window).height(),
-        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
-    return Math.max(0, t>0? Math.min(elH, H-t) : (b<H?b:H));
-}
-
-$(window).on( 'scroll', function(){
-    var $container = $('#hl-main-content');
-    var headerHeight = $('#hl-header').height();
-    var containerHeight = inViewport($container);
-    var scrollDistance = $('body').scrollTop();
-    if(scrollDistance<50){
-    // console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
-        $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
-    }else{
-        $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
-    }
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  }); 
 
 });
+
+// function inViewport($el) {
+//     var elH = $el.outerHeight(),
+//         H   = $(window).height(),
+//         r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+//     return Math.max(0, t>0? Math.min(elH, H-t) : (b<H?b:H));
+// }
+
+// $(window).on( 'scroll', function(){
+//     var $container = $('#hl-main-content');
+//     var headerHeight = $('#hl-header').height();
+//     var containerHeight = inViewport($container);
+//     var scrollDistance = $('body').scrollTop();
+//     if(scrollDistance<50){
+//     // console.log(containerHeight-headerHeight+"_"+inViewport($('body'))+'_'+scrollDistance)
+//         $('.side-nav-wrapper').height(containerHeight-headerHeight-16+50-scrollDistance);
+//     }else{
+//         $('.side-nav-wrapper').height(containerHeight-headerHeight-16);
+//     }
+
+// });

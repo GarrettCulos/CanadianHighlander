@@ -8,7 +8,7 @@
 	.hl-sub-email {
 		display:inline-block;
 		padding:6px 10px 6px 10px;
-		background-color:$off-white-darker;
+		background-color:$off_white-darker;
 		width:100%;
 		label{
 			@include m-body-font;
@@ -50,7 +50,7 @@
 			padding:8px 15px 7px 15px;
 			&:hover {
 				background-color:$blue;
-				color:$off-white;
+				color:$off_white;
 				border:transparent;
 			}
 		}

@@ -4,20 +4,20 @@ footer{
 		@include m-body-font;
 		display:table;
 		width:100%;
-		border-top:2px solid $light-grey
+		border-top:2px solid $light_grey
 	}
 
 	.hl-footer-top {
 		padding-top:15px;
 		padding-bottom:15px;
-		background-color:$dark-grey;
+		background-color:$dark_grey;
 		
 		h2 {
 			border-top:1px;
 			border-bottom:0;
 			border-left:0;
 			border-right:0;
-			border-color:$mid-white;
+			border-color:$mid_white;
 			border-style:solid;
 			padding:10px 0 10px;
 			margin:0;
@@ -28,7 +28,7 @@ footer{
 			}
 			&:hover {
 				a {
-					color:$dark-red;
+					color:$dark_red;
 				}
 			}
 		}
@@ -37,12 +37,12 @@ footer{
 			margin:5px 0 10px;
 			@include m-body-font;
 			a {
-				color:$mid-white;
+				color:$mid_white;
 				text-decoration: none;
 			}	
 			&:hover {
 				a {
-					color:$off-white-darker;
+					color:$off_white-darker;
 				}
 				
 			}
@@ -51,7 +51,7 @@ footer{
 
 	.hl-footer-bottom {
 		padding:15px 0;
-		background-color:$my-black;
+		background-color:$my_black;
 		h3{
 			margin:0;
 		}

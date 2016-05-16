@@ -19,7 +19,7 @@
 }
 
 #hl-content {
-	// margin-top:47px;
+	margin-top:$header-height;
 }
 
 #hl-main-content {
@@ -30,6 +30,19 @@
 	ul {
 		li{
 			list-style-type: none;
+		}
+	}
+}
+
+#highlander-main{
+	padding-top:30px;
+	.introduction-image{
+		img.hlander-logo {
+			width:150px;
+			z-index:100;
+		}
+		img{
+			width:100%;
 		}
 	}
 }

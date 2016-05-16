@@ -1,0 +1,45 @@
+.contact-forn{
+	@include m-body-font;
+}
+.hlander-contact{
+	padding:15px 0;
+	ul.nav{
+	border-bottom:0;
+		li{
+			&.contact-nav-tab{
+				@include m-sectin-title-font;
+				padding:10px 15px 10px 0;
+				border:1px solid transparent;
+			}
+			&.active{
+				a{
+					opacity: 1;
+					color:white;
+					background-color:$blue;
+					border:1px solid $blue;
+					&:hover{
+						opacity: 1;
+						color:white;
+						background-color:$blue;
+						border:1px solid $blue;
+					}
+				}
+			}
+			a{
+				@include m-body-font;
+				margin:0 10px;
+				opacity: 0.7;
+				border-radius:1px;
+				color:$light_red;
+				background-color:white;
+				border:1px solid $light_red;
+				&:hover{
+					opacity: 1;
+					color:white;
+					background-color:$light_red;
+				}
+			}
+
+		}	
+	}
+}

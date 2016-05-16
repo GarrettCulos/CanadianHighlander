@@ -1,0 +1,37 @@
+.hl-podcasts{
+	padding:30px 0;
+	@include m-body-font;
+
+	.highlander-tcobo{
+	}
+	.podcast-container{
+	}	
+	
+}
+.podcast-container{
+	@include m-body-font;
+	background-color:white;
+	padding:15px;
+	border-bottom: 8px solid $my_green;
+}	
+
+#highlander-tcobo{
+	.podcast-container{
+		padding-top:30px;
+		padding-bottom:30px;
+		padding-left:50px;
+		padding-right:50px;
+		.entry-content{
+			audio,
+			.tcobo-guest,
+			.tcobo-description,
+			.tcobo-sub-title,
+			.tcobo-title{
+				margin:8px 0;
+			}
+			audio{
+				width:100%;
+			}
+		}
+	}	
+}

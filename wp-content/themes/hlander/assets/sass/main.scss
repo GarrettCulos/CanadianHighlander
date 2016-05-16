@@ -10,13 +10,20 @@
 // Rest of the modules
 @import "modules/mixins";
 
-	//@import "modules/fonts";
+//@import "modules/fonts";
+@import "partials/base";
 @import "partials/helpers";
 
 // Impoprt from partials
 @import "partials/home";
 
 @import "partials/about/about";
+
+@import "partials/contact/contact";
+@import "partials/wpcf7-overrides/wpcf7_overrides";
+
+@import "partials/media/podcast";
+
 
 @import "partials/header/navbar";
 @import "partials/side_nav";

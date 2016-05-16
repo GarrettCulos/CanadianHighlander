@@ -7,8 +7,9 @@ body {
 	color:$body-color;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color:transparent;
+    // width: 10px;
+	// background-color: $grey;
+    // background-color:transparent;
 }
  
 ::-webkit-scrollbar-track {
@@ -16,7 +17,25 @@ body {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: $lighter-grey;
-  border-radius:2px;
-  outline: 1px solid $lighter-grey;
+  background-color: $grey;
+  // border-radius:2px;
+  // outline: 1px solid $lighter_grey;
+}
+
+.post-container{
+  @include m-body-font;
+  // margin-left:60px;
+  // margin-right:60px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  // margin-top:10px;
+  padding:10px;
+  background-color:$mid_white;
+  
+  .title{
+    text-align: center;
+  }
+  .sub-title{
+    @include m-sectin-title-font;
+  }
 }

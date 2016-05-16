@@ -1,49 +1,56 @@
 //colors
-$my-black:rgb(5,5,5);
+$my_black:rgb(5,5,5);
+$my_green:rgb(0, 204, 0);
+$my_yellow:rgb(235, 235, 0);
 
-$dark-grey:rgb(15,15,15);
+
+
+$dark_grey:rgb(15,15,15);
 $grey: rgb(20,20,20);
-$light-grey: rgb(50,50,50);
-$lighter-grey: rgb(80,80,80);
+$light_grey: rgb(50,50,50);
+$lighter_grey: rgb(80,80,80);
 
 // $red:rgb(80,80,80);
-// $light-red:rgb(160,160,160);
+// $light_red:rgb(160,160,160);
 
 $blue:rgb(80,80,255);
-$light-blue:rgb(100,100,255);
+$light_blue:rgb(100,100,255);
 
 $red: rgb(197, 17, 9);
-$light-red: rgb(217, 17, 9);
-$dark-red: rgb(147, 17, 9);
-$mid-white: rgb(215,215,215);
-$off-white: rgb(245,245,245);
-$my-white: rgb(255,255,255);
-$off-white-darker:rgb(195,195,195);
+$light_red: rgb(217, 17, 9);
+$dark_red: rgb(147, 17, 9);
+$mid_white: rgb(215,215,215);
+$off_white: rgb(245,245,245);
+$my_white: rgb(255,255,255);
+$off_white-darker:rgb(195,195,195);
+
+$header-color:rgba(0,0,0,0.8);
+$header-height:75px;
 
 // 	background color
-	$background-color:$light-grey;
+	$background-color:$off_white;
 	$navbar-background-color:#2f2f2f;
 	// $background-color-red: $red;
 	$background-color-blue: $blue;
 
-// 	base colors 
-	$body-color: $off-white;
-	$body-color-hover:$mid-white;
-	$body-color-active:$mid-white;
-	$title-color:$off-white;
-	$title-color-hover:$mid-white;
-	$title-color-active:$mid-white;
-	$section-title-color:$off-white;
-	$section-title-color-hover:$mid-white;
-	$section-title-color-active:$mid-white;
+// 	base text colors 
+	$body-color: $off_white;
+	$body-color-hover:$mid_white;
+	$body-color-active:$mid_white;
+	$title-color:$off_white;
+	$title-color-hover:$mid_white;
+	$title-color-active:$mid_white;
+	$section-title-color:$off_white;
+	$section-title-color-hover:$mid_white;
+	$section-title-color-active:$mid_white;
 	
-	$alt-body-color: $light-grey;
+	$alt-body-color: $dark_grey;
 	$alt-body-color-hover: $grey;
-	$alt-body-color-active: $grey;
-	$alt-title-color: $light-grey;
+	$alt-body-color-active: $light_grey;
+	$alt-title-color: $dark_grey;
 	$alt-title-color-hover: $grey;
 	$alt-title-color-active: $grey;
-	$alt-section-title-color: $light-grey;
+	$alt-section-title-color: $dark_grey;
 	$alt-section-title-color-hover: $grey;
 	$alt-section-title-color-active: $grey;
 

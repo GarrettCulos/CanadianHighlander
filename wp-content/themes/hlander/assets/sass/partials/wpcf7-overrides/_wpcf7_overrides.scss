@@ -1,0 +1,15 @@
+.wpcf7{
+	.wpcf7-form{
+		@include m-body-font;
+		.wpcf7-submit{
+			@include btn-style;
+			width:100%;
+		}
+		.wpcf7-form-control-wrap{
+			input,
+			textarea{
+				width:100%;
+			}
+		}
+	}	
+}
