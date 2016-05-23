@@ -29,13 +29,14 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $mid_white;
+		
 		svg{
 			display:inline-block;
 			height:1.2em;
 			width:1.2em;
 			margin-right:10px;
 			font-size:inherit;
-		    vertical-align: middle;
+		  vertical-align: middle;
 
 			circle,
 			polygon,
@@ -57,9 +58,8 @@
 		}
 	}
 
-
 	.sub-nav {
-		a{
+		a {
 			list-style-type: none;
 			text-decoration: none;
 			text-transform: capitalize;

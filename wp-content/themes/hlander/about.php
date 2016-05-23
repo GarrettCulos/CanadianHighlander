@@ -12,18 +12,9 @@
  
 $about_fields = get_fields(); 
 ?>
-<!-- Navigation -->
-<div id="inner-nav">
-	<!-- /#sidebar-wrapper -->
-	<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-		<span class="hamb-top"></span>
-		<span class="hamb-middle"></span>
-		<span class="hamb-bottom"></span>
-	</button>
-</div>
 
 <!-- Highlander News -->
-<div class="fluid-container">
+<div class="container-fluid">
 	<div class="container">
 		<div id="news">
 			<?php 

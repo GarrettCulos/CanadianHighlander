@@ -8797,11 +8797,20 @@ button.close {
   }
 }
 /* line 1, ../assets/sass/partials/_base.scss */
+a {
+  text-decoration: none;
+}
+/* line 3, ../assets/sass/partials/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 7, ../assets/sass/partials/_base.scss */
 html {
   height: 100%;
 }
 
-/* line 5, ../assets/sass/partials/_base.scss */
+/* line 11, ../assets/sass/partials/_base.scss */
 body {
   height: 100%;
 }
@@ -8809,7 +8818,7 @@ body {
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
-/* line 12, ../assets/sass/partials/_base.scss */
+/* line 18, ../assets/sass/partials/_base.scss */
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -8821,31 +8830,37 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 22, ../assets/sass/partials/_base.scss */
+/* line 28, ../assets/sass/partials/_base.scss */
 #wrapper.toggled {
   padding-left: 300px;
+  overflow: hidden;
 }
-/* line 24, ../assets/sass/partials/_base.scss */
+/* line 32, ../assets/sass/partials/_base.scss */
 #wrapper.toggled #page-content-wrapper {
-  position: absolute;
   margin-right: -300px;
+  overflow: hidden;
 }
-/* line 28, ../assets/sass/partials/_base.scss */
+/* line 35, ../assets/sass/partials/_base.scss */
+#wrapper.toggled #page-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* line 40, ../assets/sass/partials/_base.scss */
 #wrapper.toggled #sidebar-wrapper {
   width: 300px;
   border-left: 3px solid #5050ff;
 }
 
-/* line 35, ../assets/sass/partials/_base.scss */
+/* line 47, ../assets/sass/partials/_base.scss */
 #page-content-wrapper {
+  position: relative;
   height: 100%;
-  padding-left: 50px;
+  overflow-y: scroll;
   background-color: rgba(1, 1, 1, 0.5);
 }
 
-/* line 40, ../assets/sass/partials/_base.scss */
+/* line 53, ../assets/sass/partials/_base.scss */
 #sidebar-wrapper {
-  border-left: 0px solid #5050ff;
+  border-left: 3px solid rgba(80, 80, 255, 0.8);
   z-index: 1000;
   left: 300px;
   width: 0;
@@ -8859,7 +8874,7 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 54, ../assets/sass/partials/_base.scss */
+/* line 67, ../assets/sass/partials/_base.scss */
 #sidebar-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -8867,7 +8882,7 @@ body {
 /*-------------------------------*/
 /*            Overlay            */
 /*-------------------------------*/
-/* line 63, ../assets/sass/partials/_base.scss */
+/* line 76, ../assets/sass/partials/_base.scss */
 .overlay {
   position: fixed;
   display: none;
@@ -8886,24 +8901,24 @@ svg path {
   fill: black;
 }
 
-/* line 4, ../assets/sass/partials/_helpers.scss */
+/* line 5, ../assets/sass/partials/_helpers.scss */
 html,
 body {
   background-color: whitesmoke;
   color: whitesmoke;
 }
 
-/* line 15, ../assets/sass/partials/_helpers.scss */
+/* line 17, ../assets/sass/partials/_helpers.scss */
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-/* line 19, ../assets/sass/partials/_helpers.scss */
+/* line 21, ../assets/sass/partials/_helpers.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #141414;
 }
 
-/* line 25, ../assets/sass/partials/_helpers.scss */
+/* line 27, ../assets/sass/partials/_helpers.scss */
 .post-container {
   font-size: 1.1428em;
   font-family: "Raleway", sans-serif;
@@ -8912,18 +8927,22 @@ body {
   margin-bottom: 10px;
   text-decoration: none;
   padding: 10px;
-  background-color: #d7d7d7;
+  background-color: rgba(1, 1, 1, 0.6);
 }
-/* line 35, ../assets/sass/partials/_helpers.scss */
+/* line 37, ../assets/sass/partials/_helpers.scss */
 .post-container .title {
   text-align: center;
 }
-/* line 38, ../assets/sass/partials/_helpers.scss */
+/* line 40, ../assets/sass/partials/_helpers.scss */
 .post-container .sub-title {
   font-size: 1.7142em;
   font-family: "Ubuntu", sans-serif;
   line-height: 1em;
   color: whitesmoke;
+}
+/* line 43, ../assets/sass/partials/_helpers.scss */
+.post-container:hover {
+  background-color: rgba(1, 1, 1, 0.8);
 }
 
 /* line 1, ../assets/sass/partials/_home.scss */
@@ -9099,7 +9118,7 @@ body {
   color: whitesmoke;
   width: 100%;
 }
-/* line 57, ../assets/sass/modules/_mixins.scss */
+/* line 58, ../assets/sass/modules/_mixins.scss */
 .wpcf7 .wpcf7-form .wpcf7-submit:hover {
   background-color: #d91109;
   color: white;
@@ -9179,22 +9198,18 @@ body {
   padding-top: 60px;
   padding: 0;
   margin: 0;
-  top: 50%;
+  top: 0;
   width: 300px;
   list-style: none;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
-/* line 49, ../assets/sass/partials/header/_navbar.scss */
+/* line 45, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li {
   position: relative;
   line-height: 20px;
   display: inline-block;
   width: 100%;
 }
-/* line 55, ../assets/sass/partials/header/_navbar.scss */
+/* line 51, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li:before {
   content: '';
   position: absolute;
@@ -9206,16 +9221,16 @@ body {
   background-color: #5050ff;
   transition: width .2s ease-in;
 }
-/* line 67, ../assets/sass/partials/header/_navbar.scss */
+/* line 63, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li.dropdown-header:before {
   background-color: #1c1c1c;
 }
-/* line 84, ../assets/sass/partials/header/_navbar.scss */
+/* line 80, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li.open:hover:before {
   width: 100%;
   transition: width .2s ease-in;
 }
-/* line 90, ../assets/sass/partials/header/_navbar.scss */
+/* line 86, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li a {
   border-bottom: 2px;
   font-size: 1.2em;
@@ -9226,12 +9241,12 @@ body {
   text-decoration: none;
   padding: 20px 15px 15px 25px;
 }
-/* line 109, ../assets/sass/partials/header/_navbar.scss */
+/* line 105, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav li:hover:before {
   width: 100%;
   transition: width .2s ease-in;
 }
-/* line 115, ../assets/sass/partials/header/_navbar.scss */
+/* line 111, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav .dropdown-menu {
   position: relative;
   width: 100%;
@@ -9242,7 +9257,7 @@ body {
   background-color: #222;
   box-shadow: none;
 }
-/* line 127, ../assets/sass/partials/header/_navbar.scss */
+/* line 123, ../assets/sass/partials/header/_navbar.scss */
 .sidebar-nav > .sidebar-brand {
   height: 65px;
   font-size: 20px;
@@ -9252,102 +9267,98 @@ body {
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
-/* line 140, ../assets/sass/partials/header/_navbar.scss */
+/* line 136, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {
   position: absolute;
-  left: 0;
-  height: 4px;
-  width: 100%;
+  left: 50%;
+  height: 3px;
+  width: 60%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 148, ../assets/sass/partials/header/_navbar.scss */
+/* line 145, ../assets/sass/partials/header/_navbar.scss */
 .hamburger {
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
   z-index: 999;
   display: block;
-  width: 32px;
-  height: 32px;
-  margin-left: 15px;
-  background: transparent;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
   border: none;
 }
-/* line 158, ../assets/sass/partials/header/_navbar.scss */
+/* line 156, ../assets/sass/partials/header/_navbar.scss */
 .hamburger:hover {
   outline: none;
 }
-/* line 161, ../assets/sass/partials/header/_navbar.scss */
+/* line 159, ../assets/sass/partials/header/_navbar.scss */
 .hamburger:focus {
   outline: none;
 }
-/* line 164, ../assets/sass/partials/header/_navbar.scss */
+/* line 162, ../assets/sass/partials/header/_navbar.scss */
 .hamburger:active {
   outline: none;
 }
-/* line 168, ../assets/sass/partials/header/_navbar.scss */
+/* line 166, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed:before {
   content: '';
   display: block;
   width: 100px;
   font-size: 14px;
-  color: #fff;
+  color: #d7d7d7;
   line-height: 32px;
   text-align: center;
   opacity: 0;
 }
-/* line 179, ../assets/sass/partials/header/_navbar.scss */
+/* line 177, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed:hover:before {
   opacity: 1;
   display: block;
 }
-/* line 183, ../assets/sass/partials/header/_navbar.scss */
-.hamburger.is-closed:hover .hamb-top {
-  top: 4px;
-}
-/* line 186, ../assets/sass/partials/header/_navbar.scss */
+/* line 184, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed:hover .hamb-bottom,
 .hamburger.is-closed:hover .hamb-middle,
 .hamburger.is-closed:hover .hamb-top {
-  background-color: #5050ff;
+  background-color: white;
 }
-/* line 191, ../assets/sass/partials/header/_navbar.scss */
-.hamburger.is-closed:hover .hamb-bottom {
-  bottom: 4px;
-}
-/* line 195, ../assets/sass/partials/header/_navbar.scss */
+/* line 193, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed .hamb-top {
-  background-color: #1c1c1c;
-  top: 5px;
+  background-color: #d7d7d7;
+  top: 14px;
 }
-/* line 200, ../assets/sass/partials/header/_navbar.scss */
+/* line 198, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed .hamb-middle {
-  background-color: #1c1c1c;
-  top: 50%;
-  margin-top: -2px;
+  background-color: #d7d7d7;
 }
-/* line 206, ../assets/sass/partials/header/_navbar.scss */
+/* line 202, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed .hamb-bottom {
-  background-color: #1c1c1c;
-  bottom: 5px;
+  background-color: #d7d7d7;
+  bottom: 12px;
 }
-/* line 213, ../assets/sass/partials/header/_navbar.scss */
+/* line 208, ../assets/sass/partials/header/_navbar.scss */
+.hamburger.is-open {
+  transform: rotate(1440deg);
+  transition: all 0.5s ease;
+}
+/* line 212, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open .hamb-top {
-  background-color: #c51109;
+  background-color: #d7d7d7;
   top: 50%;
-  margin-top: -2px;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
-/* line 219, ../assets/sass/partials/header/_navbar.scss */
+/* line 218, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open .hamb-middle {
-  background-color: #c51109;
   display: none;
+  background-color: #d7d7d7;
 }
-/* line 224, ../assets/sass/partials/header/_navbar.scss */
+/* line 223, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open .hamb-bottom {
-  background-color: #c51109;
+  background-color: #d7d7d7;
   top: 50%;
-  margin-top: -2px;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
-/* line 230, ../assets/sass/partials/header/_navbar.scss */
+/* line 229, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open:before {
   content: '';
   display: block;
@@ -9358,7 +9369,7 @@ body {
   text-align: center;
   opacity: 0;
 }
-/* line 240, ../assets/sass/partials/header/_navbar.scss */
+/* line 239, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open:hover:before {
   opacity: 1;
   display: block;
@@ -9367,11 +9378,18 @@ body {
 /*-------------------------------*/
 /*       Inner-Navigation        */
 /*-------------------------------*/
-/* line 251, ../assets/sass/partials/header/_navbar.scss */
+/* line 250, ../assets/sass/partials/header/_navbar.scss */
 #inner-nav {
-  display: block;
+  background-color: rgba(80, 80, 255, 0.8);
+  position: fixed;
   height: 100%;
-  margin-left: -50px;
+  width: 50px;
+  z-index: 2;
+  transition: background-color 0.7;
+}
+/* line 257, ../assets/sass/partials/header/_navbar.scss */
+.toggled #inner-nav {
+  background-color: rgba(80, 80, 255, 0.4);
 }
 
 /* line 2, ../assets/sass/partials/_side_nav.scss */
@@ -9403,7 +9421,7 @@ body {
   text-transform: uppercase;
   color: #d7d7d7;
 }
-/* line 32, ../assets/sass/partials/_side_nav.scss */
+/* line 33, ../assets/sass/partials/_side_nav.scss */
 .side-nav-wrapper a svg {
   display: inline-block;
   height: 1.2em;
@@ -9412,18 +9430,18 @@ body {
   font-size: inherit;
   vertical-align: middle;
 }
-/* line 40, ../assets/sass/partials/_side_nav.scss */
+/* line 41, ../assets/sass/partials/_side_nav.scss */
 .side-nav-wrapper a svg circle,
 .side-nav-wrapper a svg polygon,
 .side-nav-wrapper a svg rect,
 .side-nav-wrapper a svg path {
   fill: #d7d7d7;
 }
-/* line 47, ../assets/sass/partials/_side_nav.scss */
+/* line 48, ../assets/sass/partials/_side_nav.scss */
 .side-nav-wrapper a:hover {
   color: #fff;
 }
-/* line 50, ../assets/sass/partials/_side_nav.scss */
+/* line 51, ../assets/sass/partials/_side_nav.scss */
 .side-nav-wrapper a:hover svg circle,
 .side-nav-wrapper a:hover svg polygon,
 .side-nav-wrapper a:hover svg rect,
@@ -9658,4 +9676,47 @@ footer .hl-footer-bottom h3 {
   height: 64px;
   width: 64px;
   display: inline-block;
+}
+
+/* line 34, ../assets/sass/partials/icons/_icons.scss */
+.social-icons {
+  position: absolute;
+  z-index: 999;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 40, ../assets/sass/partials/icons/_icons.scss */
+.social-icons a.nav-icon {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d7d7d7;
+  display: block;
+  padding: 15px 0;
+}
+/* line 46, ../assets/sass/partials/icons/_icons.scss */
+.social-icons a.nav-icon svg {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  font-size: inherit;
+  vertical-align: middle;
+}
+/* line 53, ../assets/sass/partials/icons/_icons.scss */
+.social-icons a.nav-icon svg circle,
+.social-icons a.nav-icon svg polygon,
+.social-icons a.nav-icon svg rect,
+.social-icons a.nav-icon svg path {
+  fill: #d7d7d7;
+}
+/* line 60, ../assets/sass/partials/icons/_icons.scss */
+.social-icons a.nav-icon:hover {
+  color: #fff;
+}
+/* line 63, ../assets/sass/partials/icons/_icons.scss */
+.social-icons a.nav-icon:hover svg circle,
+.social-icons a.nav-icon:hover svg polygon,
+.social-icons a.nav-icon:hover svg rect,
+.social-icons a.nav-icon:hover svg path {
+  fill: rgba(1, 1, 1, 0.5);
 }
