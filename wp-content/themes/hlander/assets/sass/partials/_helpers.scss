@@ -38,7 +38,7 @@ body {
     text-align: center;
   }
   .sub-title{
-    @include m-sectin-title-font;
+    @include m-section-title-font;
   }
   &:hover{
     background-color:rgba(1,1,1,0.8);

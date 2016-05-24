@@ -40,7 +40,7 @@
     padding: 0;
     margin: 0;
     top: 0;
-    width: 300px;
+    width: 220px;
     list-style: none;
     li {
       position: relative;
@@ -147,7 +147,7 @@
     position: absolute;
     top:2px;
     left:2px;
-    z-index: 999;
+    z-index: 3;
     display: block;
     width: 45px;
     height: 45px;
@@ -184,7 +184,7 @@
         .hamb-bottom,
         .hamb-middle,
         .hamb-top {
-          background-color:white;          
+          background-color:rgba(1,1,1,0.5);          
         }
         .hamb-bottom {
           // bottom:4px;
@@ -218,7 +218,6 @@
       .hamb-middle {
         @extend %extend_1b;
         display:none;
-        background-color: $mid_white;
       }
       .hamb-bottom {
         @extend %extend_1b;
@@ -239,21 +238,25 @@
       &:hover:before {
         opacity: 1;
         display: block;
+        .hamb-top,
+        .hamb-bottom {
+          background-color:rgba(1,1,1,0.5);
+        }
       }
     }
   }
-
 
 /*-------------------------------*/
 /*       Inner-Navigation        */
 /*-------------------------------*/
   #inner-nav{
-    background-color:rgba($blue,0.8);
+    background-color:rgba($blue,0.6);
     position:fixed;
     height:100%;
     width:50px;
     z-index:2;
     transition: background-color 0.7;
+    margin-right:50px;
     .toggled & {
       background-color:rgba($blue,0.4);
     }

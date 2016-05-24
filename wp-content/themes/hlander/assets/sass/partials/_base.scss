@@ -26,11 +26,11 @@ body{
     background-size:cover;
     background-repeat:no-repeat;
     &.toggled {
-      padding-left: 300px;
+      padding-left: 220px;
       overflow:hidden;
 
       & #page-content-wrapper {
-        margin-right: -300px;
+        margin-right: -220px;
         overflow:hidden;
         &::-webkit-scrollbar {
           display: none;
@@ -38,7 +38,7 @@ body{
       }
 
       & #sidebar-wrapper {
-        width: 300px;
+        width: 220px;
         border-left:3px solid $blue;
       }
     }
@@ -48,15 +48,15 @@ body{
     position:relative;
     height:100%;
     overflow-y:scroll;
-    background-color: rgba(1,1,1,0.5);
+    background-color: rgba(1,1,1,0.8);
   }
   #sidebar-wrapper {
-    border-left:3px solid rgba($blue,0.8);
+    border-left:3px solid rgba($blue,0.6);
     z-index: 1000;
-    left: 300px;
+    left: 220px;
     width: 0;
     height: 100%;
-    margin-left: -300px;
+    margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
     background: #1a1a1a;
@@ -72,6 +72,9 @@ body{
 /*-------------------------------*/
 /*            Overlay            */
 /*-------------------------------*/
+.content-container{
+  margin-left:50px;
+}
 
 .overlay {
     position: fixed;

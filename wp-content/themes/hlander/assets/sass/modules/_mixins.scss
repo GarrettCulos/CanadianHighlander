@@ -1,14 +1,14 @@
 // title font
  @mixin m-title-font{
  	font-size:$large-font;
- 	font-family:$accent-font-family;
+ 	font-family:$normal-font-family;
  	line-height:1.2em;
  	color: $title-color;
  }
  
  @mixin m-title-font-hover{
  	font-size:$large-font;
- 	font-family:$accent-font-family;
+ 	font-family:$normal-font-family;
  	line-height:1.2em;
  	color: $title-color;
  	&:hover { color:$title-color-hover; }
@@ -16,14 +16,14 @@
  }
 
 // section title font
-@mixin m-sectin-title-font{
+@mixin m-section-title-font{
  	font-size:$medium-font;
- 	font-family:$accent-font-family;
+ 	font-family:$normal-font-family;
  	line-height:1em;
  	color: $section-title-color;
  }
 
-@mixin m-sectin-title-font-hover{
+@mixin m-section-title-font-hover{
  	font-size:$medium-font;
  	font-family:$accent-font-family;
  	line-height:1em;

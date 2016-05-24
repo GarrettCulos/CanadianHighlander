@@ -8832,12 +8832,12 @@ body {
 }
 /* line 28, ../assets/sass/partials/_base.scss */
 #wrapper.toggled {
-  padding-left: 300px;
+  padding-left: 220px;
   overflow: hidden;
 }
 /* line 32, ../assets/sass/partials/_base.scss */
 #wrapper.toggled #page-content-wrapper {
-  margin-right: -300px;
+  margin-right: -220px;
   overflow: hidden;
 }
 /* line 35, ../assets/sass/partials/_base.scss */
@@ -8846,7 +8846,7 @@ body {
 }
 /* line 40, ../assets/sass/partials/_base.scss */
 #wrapper.toggled #sidebar-wrapper {
-  width: 300px;
+  width: 220px;
   border-left: 3px solid #5050ff;
 }
 
@@ -8855,17 +8855,17 @@ body {
   position: relative;
   height: 100%;
   overflow-y: scroll;
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: rgba(1, 1, 1, 0.8);
 }
 
 /* line 53, ../assets/sass/partials/_base.scss */
 #sidebar-wrapper {
-  border-left: 3px solid rgba(80, 80, 255, 0.8);
+  border-left: 3px solid rgba(80, 80, 255, 0.6);
   z-index: 1000;
-  left: 300px;
+  left: 220px;
   width: 0;
   height: 100%;
-  margin-left: -300px;
+  margin-left: -220px;
   overflow-y: auto;
   overflow-x: hidden;
   background: #1a1a1a;
@@ -8882,7 +8882,12 @@ body {
 /*-------------------------------*/
 /*            Overlay            */
 /*-------------------------------*/
-/* line 76, ../assets/sass/partials/_base.scss */
+/* line 75, ../assets/sass/partials/_base.scss */
+.content-container {
+  margin-left: 50px;
+}
+
+/* line 79, ../assets/sass/partials/_base.scss */
 .overlay {
   position: fixed;
   display: none;
@@ -8936,7 +8941,7 @@ body {
 /* line 40, ../assets/sass/partials/_helpers.scss */
 .post-container .sub-title {
   font-size: 1.7142em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1em;
   color: whitesmoke;
 }
@@ -8953,7 +8958,7 @@ body {
 /* line 4, ../assets/sass/partials/_home.scss */
 .home h2 {
   font-size: 2.1428em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.2em;
   color: whitesmoke;
 }
@@ -9000,23 +9005,100 @@ body {
   width: 100%;
 }
 
-/* line 5, ../assets/sass/partials/about/_about.scss */
-.banner {
-  position: relative;
-  width: 100%;
-  height: 350px;
+/* line 1, ../assets/sass/partials/about/_about.scss */
+#council {
+  margin: 30px 0;
 }
-/* line 10, ../assets/sass/partials/about/_about.scss */
+/* line 3, ../assets/sass/partials/about/_about.scss */
+#council .title {
+  font-size: 2.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: whitesmoke;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+/* line 7, ../assets/sass/partials/about/_about.scss */
+#council .title .date {
+  font-size: 1.7142em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1em;
+  color: whitesmoke;
+  float: right;
+  font-size: 0.5em;
+}
+/* line 13, ../assets/sass/partials/about/_about.scss */
+#council .member-name,
+#council .member-description {
+  font-size: 1.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  color: whitesmoke;
+}
+/* line 18, ../assets/sass/partials/about/_about.scss */
+#council .sub-title {
+  margin: 20px 0;
+  font-size: 1.7142em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1em;
+  color: whitesmoke;
+}
+/* line 22, ../assets/sass/partials/about/_about.scss */
+#council .date,
+#council .content {
+  font-size: 1.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  color: whitesmoke;
+}
+
+/* line 28, ../assets/sass/partials/about/_about.scss */
+#rules {
+  margin: 30px 0;
+}
+/* line 30, ../assets/sass/partials/about/_about.scss */
+#rules .title {
+  font-size: 2.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: whitesmoke;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+/* line 35, ../assets/sass/partials/about/_about.scss */
+#rules .content {
+  font-size: 1.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  color: whitesmoke;
+}
+
+/* line 42, ../assets/sass/partials/about/_about.scss */
+#points-list .title {
+  font-size: 2.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+/* line 47, ../assets/sass/partials/about/_about.scss */
+#points-list .pointed-cards {
+  padding: 30px 0;
+}
+/* line 49, ../assets/sass/partials/about/_about.scss */
+#points-list .pointed-cards .pointed-card {
+  font-size: 1.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  color: whitesmoke;
+}
+
+/* line 60, ../assets/sass/partials/about/_about.scss */
 .banner .banner-image {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background-color: black;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-/* line 20, ../assets/sass/partials/about/_about.scss */
+/* line 70, ../assets/sass/partials/about/_about.scss */
 .banner .image-blur {
   -webkit-filter: blur(1px) opacity(0.8);
   -moz-filter: blur(1px) opacity(0.8);
@@ -9024,13 +9106,10 @@ body {
   -ms-filter: blur(1px) opacity(0.8);
   filter: blur(1px) opacity(0.8);
 }
-/* line 28, ../assets/sass/partials/about/_about.scss */
+/* line 78, ../assets/sass/partials/about/_about.scss */
 .banner .title {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
   font-size: 2.1428em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.2em;
   color: whitesmoke;
   text-shadow: 0 0 8px black;
@@ -9038,9 +9117,39 @@ body {
   text-transform: uppercase;
 }
 
-/* line 40, ../assets/sass/partials/about/_about.scss */
+/* line 89, ../assets/sass/partials/about/_about.scss */
+#news {
+  margin: 30px 0;
+  padding: 10px;
+  border: 2px solid #c51109;
+  border-radius: 4px;
+}
+/* line 94, ../assets/sass/partials/about/_about.scss */
 #news a {
   text-decoration: none;
+  font-size: 1.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  color: whitesmoke;
+}
+/* line 98, ../assets/sass/partials/about/_about.scss */
+#news .title {
+  font-size: 2.1428em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+/* line 102, ../assets/sass/partials/about/_about.scss */
+#news .title,
+#news .news-date,
+#news .news-content {
+  display: inline-block;
+  margin: 0 20px;
+}
+/* line 109, ../assets/sass/partials/about/_about.scss */
+#news .news-content {
+  text-align: left;
 }
 
 /* line 1, ../assets/sass/partials/contact/_contact.scss */
@@ -9062,7 +9171,7 @@ body {
 /* line 9, ../assets/sass/partials/contact/_contact.scss */
 .hlander-contact ul.nav li.contact-nav-tab {
   font-size: 1.7142em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1em;
   color: whitesmoke;
   padding: 10px 15px 10px 0;
@@ -9199,7 +9308,7 @@ body {
   padding: 0;
   margin: 0;
   top: 0;
-  width: 300px;
+  width: 220px;
   list-style: none;
 }
 /* line 45, ../assets/sass/partials/header/_navbar.scss */
@@ -9281,7 +9390,7 @@ body {
   position: absolute;
   top: 2px;
   left: 2px;
-  z-index: 999;
+  z-index: 3;
   display: block;
   width: 45px;
   height: 45px;
@@ -9320,7 +9429,7 @@ body {
 .hamburger.is-closed:hover .hamb-bottom,
 .hamburger.is-closed:hover .hamb-middle,
 .hamburger.is-closed:hover .hamb-top {
-  background-color: white;
+  background-color: rgba(1, 1, 1, 0.5);
 }
 /* line 193, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-closed .hamb-top {
@@ -9350,15 +9459,14 @@ body {
 /* line 218, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open .hamb-middle {
   display: none;
-  background-color: #d7d7d7;
 }
-/* line 223, ../assets/sass/partials/header/_navbar.scss */
+/* line 222, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open .hamb-bottom {
   background-color: #d7d7d7;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
-/* line 229, ../assets/sass/partials/header/_navbar.scss */
+/* line 228, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open:before {
   content: '';
   display: block;
@@ -9369,25 +9477,31 @@ body {
   text-align: center;
   opacity: 0;
 }
-/* line 239, ../assets/sass/partials/header/_navbar.scss */
+/* line 238, ../assets/sass/partials/header/_navbar.scss */
 .hamburger.is-open:hover:before {
   opacity: 1;
   display: block;
+}
+/* line 241, ../assets/sass/partials/header/_navbar.scss */
+.hamburger.is-open:hover:before .hamb-top,
+.hamburger.is-open:hover:before .hamb-bottom {
+  background-color: rgba(1, 1, 1, 0.5);
 }
 
 /*-------------------------------*/
 /*       Inner-Navigation        */
 /*-------------------------------*/
-/* line 250, ../assets/sass/partials/header/_navbar.scss */
+/* line 252, ../assets/sass/partials/header/_navbar.scss */
 #inner-nav {
-  background-color: rgba(80, 80, 255, 0.8);
+  background-color: rgba(80, 80, 255, 0.6);
   position: fixed;
   height: 100%;
   width: 50px;
   z-index: 2;
   transition: background-color 0.7;
+  margin-right: 50px;
 }
-/* line 257, ../assets/sass/partials/header/_navbar.scss */
+/* line 260, ../assets/sass/partials/header/_navbar.scss */
 .toggled #inner-nav {
   background-color: rgba(80, 80, 255, 0.4);
 }
